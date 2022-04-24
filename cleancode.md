@@ -43,3 +43,51 @@
 - What does code that has been take care of look like?
 
 - How does one develop code sense?
+
+## Chapter 2. Meaningful Names
+
+> April 24, 2022
+
+### Key points
+
+- Use intention-revealing names and be serious about it!
+
+- Use pronounceable and searchable names
+
+- Pick one word per concept
+
+### Things to remember
+
+- Choosing good names takes time but saves more than it takes
+
+- Avoid words whose entrenched meanings vary from our intended meaning (e.g., hp, aix, sco)
+
+- Try not to add data types/encodings to the variable names
+
+- Beware of names which vary in small ways
+
+- Use consistent spelling to support automatic code completion in modern development environments
+
+- Avoid using lowercase "L" and uppercase "O" as variable names as these are easily confused with "1" and "0", respectively
+
+- Do not make minor modifications to please the compiler
+
+- Use pronounceable names to support intelligent conversations
+
+- Single letter variable names should only be used as local variables to support better searching
+
+- The length of a name should correspond to the size of its scope
+
+- Using the same word for "consistency" across class methods can increase clarity
+
+### Reflection
+
+- Thinking twice about variable names can go a long way in writing clear and professional code
+
+- Suggesting these best practices may or may not be received well by other developers but it's best to try
+
+- Naming is partly dependent on shared culture understanding. I wonder how this is achieved in more multicultural environemnts.
+
+### Things to further investigate
+
+- As I write code and explore new codebases, I should look out for these naming best practices and try to implement them.
