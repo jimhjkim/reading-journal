@@ -2,7 +2,15 @@
 
 #노마드코더 #북클럽 #노개북 #clean_code
 
-## Chapter 1. Clean Code
+## Day 1
+
+> Verify book purchase on social media!
+
+> April 22, 2022
+
+## Day 2
+
+> Chapter 1. Clean Code
 
 > April 23, 2022
 
@@ -44,7 +52,9 @@
 
 - How does one develop code sense?
 
-## Chapter 2. Meaningful Names
+## Day 3
+
+> Chapter 2. Meaningful Names
 
 > April 24, 2022
 
@@ -91,3 +101,27 @@
 ### Things to further investigate
 
 - As I write code and explore new codebases, I should look out for these naming best practices and try to implement them.
+
+## Day 4
+
+> Review concepts by reading 3 posts by other participants
+
+> April 25, 2022
+
+### Post #1 by `cho7448-3divcs`
+
+- I liked the fact that she pointed out the "shared culutural" understanding as a key point from the chapter.
+
+- I liked how every point from the chapter was summarized with examples listed in parenthesis.
+
+- Reflection on how we try to put every detail into variable names is relatable.
+
+### Post #2 by `npolly7`
+
+- Very concise summary of the chapter
+
+- Reflection on how including encoding in the variable name helped the writer at work made me think twice about the advice given in the chapter as well.
+
+### Post #3 by `minn`
+
+- Reflecting on past professional experiences where bad variable names hampered development is encouraging me to think twice before choosing variable names at work
