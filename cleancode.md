@@ -125,3 +125,98 @@
 ### Post #3 by `minn`
 
 - Reflecting on past professional experiences where bad variable names hampered development is encouraging me to think twice before choosing variable names at work
+
+## Day 5 - 6
+
+> Chapter 3. Functions
+
+> April 23 - 24, 2022
+
+### Key points
+
+- Functions should be small
+
+- Avoid mixing levels of abstraction; to keep a function at one level of
+  abstraction, make sure the code read like a top-down set of TO paragraphs
+
+- Try to minimize the number of arguments passed to a function. Arguments
+  impair understanding and testability. Output arguments are harder to
+  understand than input arguments.
+
+### Things to remember
+
+- Functions are the first line of organization in any program.
+
+- Each line should contain no more than 150 characters and each function should
+  be no longer than 20 lines
+
+- Statements such as "if", "else", and "while" should be one line long and that
+  line should be a function call (keeps the enclosing function small and also
+  adds documentary value with a descriptive name)
+
+- Indent level of a function should not be greater than one or two
+
+- Functions should do one thing. They should do it well. They should do it only.
+
+- Check if you can extract a part of the function into another function without
+  restating its implementation to see if the original function is doing one
+  thing only
+
+- Functions that do one thing cannot be reasonable divided into sections.
+
+- Switch statements often violate many of the rules for functions. We cannot
+  always avoid switch statements but we can use polymorphisms to bury them in
+  a low-level class and is never repeated.
+
+- A long descriptive name is better than a short enigmatic name.
+
+- A long descriptive name is better than a long descriptive comment.
+
+- Passing boolean flags as arguments is confusing and should be avoided. Create
+  two functions to represent the behaviours.
+
+- Grouping arguments in to objects and lists is not cheating as we are grouping
+  concepts together.
+
+- Have no side effects
+
+- In general output arguments should be avoided. If your function must change
+  the state of something, have it change the state of its owning object.
+
+- Functions should either do something or answer something, but not both. Either
+  your function should change the state of an object, or it should return some
+  information about that object.
+
+  - e.g., "set" -> "attributeExists" + "setAttribute"
+
+- Exceptions are preferred over returning error codes as the latter promotes
+  commands being used as expressions in the predicates of "if" statements.
+
+- With exceptions, the error processing code can be separated from the happy
+  path code and can be simplified.
+
+- Extract the bodies of "try-catch" blocks into individual functions.
+
+- Try to avoid duplication across the functions
+
+- Structured programming says that every function and every block with a
+  function should have one entry and one exit. If we keep our functions small,
+  then we should not need to reply on structured programming.
+
+- Do not try to write functions that follow these rules from the start. Rather,
+  apply these rules during refactoring.
+
+### Reflection
+
+- I should try to implement these rules in my coding activities. I should also
+  try to bring these points up during code review.
+
+- Often, argument objects and lists are loaded with many values that do not
+  necessarily tie together under one concept. I wonder if this is an
+  anti-pattern.
+
+### Things to further investigate
+
+- Error codes seem to be used as much as raising exceptions. I should try to use
+  more exceptions. I wonder if the disadvantages of recompiling and redeploying
+  when using error codes is universal beyond Java.
