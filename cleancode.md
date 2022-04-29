@@ -130,7 +130,7 @@
 
 > Chapter 3. Functions
 
-> April 23 - 24, 2022
+> April 26 - 27, 2022
 
 ### Key points
 
@@ -220,3 +220,105 @@
 - Error codes seem to be used as much as raising exceptions. I should try to use
   more exceptions. I wonder if the disadvantages of recompiling and redeploying
   when using error codes is universal beyond Java.
+
+## Day 7 - 8
+
+> Chapter 4. Comments
+
+> April 28 - 29, 2022
+
+### Key points
+
+- Try to rely on expressive code rather than comments
+
+- Although there are good comments, more often than not, it is better not to use
+  comments
+
+- See if you can refactor to remove unnecesary comments
+
+### Things to remember
+
+- The proper use of comments is to compensate for our failure to express ourself
+  in code.
+
+- Programmers cannot realistically maintain comments.
+
+- Truth can only be found in one placec: the code.
+
+- Clear and expressive code with few comments is far superior to cluttered and
+  complex code with lots of comments
+
+- There are good comments!
+
+  - Legal comments (e.g., copyright, authorship)
+
+  - Informative comments (e.g., regular expressions)
+
+  - Explanation of Intent
+
+  - Clarification
+
+  - Warning of Consequences
+
+  - TODO Comments
+
+  - Amplification
+
+  - Javadocs in Public APIs
+
+- There are bad comments!
+
+  - Mumbling
+
+  - Redundant Comments
+
+  - Misleading Comments
+
+  - Mandated Comments
+
+  - Journal Comments
+
+  - Noise Comments
+
+  - Scary Noise (e.g., Javadocs)
+
+  - Don't use a comment when you can use a function or a variable
+
+  - Position Markers
+
+  - Closing Brace Comments
+
+  - Attribtuions and Bylines
+
+  - Commented-Out Code
+
+  - HTML Comments
+
+  - Nonlocal Information
+
+  - Too Much Information
+
+  - Inobvious Connection
+
+  - Function Headers
+
+  - Javadocs in Nonpublic Code
+
+### Reflection
+
+- I love writing comments! I guess I need to think about how to express myself
+  more in code effectively.
+
+- Up until now, I thought having good communication skills as a software
+  engineer was referring to engaging with different stakeholders effectively.
+  This chapter is making me rethink this. Maybe communicating well with the code
+  I write is what I should focus on.
+
+- Source control systems appears to have solved a lot of inefficiences when it
+  comes to comments.
+
+### Things to further investigate
+
+- I am curious to see how many of the comments at my work's codebase are good
+  and how much of it is bad. This chapter is really helpful as it provides ample
+  justification for why a comment is good or bad.
