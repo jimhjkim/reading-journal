@@ -322,3 +322,84 @@
 - I am curious to see how many of the comments at my work's codebase are good
   and how much of it is bad. This chapter is really helpful as it provides ample
   justification for why a comment is good or bad.
+
+## Day 9 - 10
+
+> Refactoring Mission
+
+> April 30 - 31, 2021
+
+## Day 11
+
+> Chapter 5. Formatting
+
+> May 1, 2022
+
+### Key points
+
+- Code formatting should be established as a team to communicate effectively
+
+- Be mindful of both vertical and horizontal formatting
+
+- Code formatting rules should be configured in each IDE and applied automatically.
+
+### Things to remember
+
+- Code formatting is about communication
+
+- Style and discipline survives even though code does not
+
+- Vertial formatting -> typically 200 lines with an upper limit of 500
+
+- A source file should be like a newspaper article. File name should indicate whether we are in the right module or not.
+  The topmost parts should provide the high-level concepts and algorithms. Details should increase as you move downward.
+
+- Vertical Openness Between Concepts -> use blank lines to to separate different concepts (i.e., package declaration,
+  imports, each of the functions)
+
+- Vertical Density -> lines of code that are tigthly related should appear vertically dense
+
+- Vertical Distance -> closely related concepts should be kept vertically close to each other
+
+- Variables should be declared as close to their usage as possible
+
+- Local variables should appear at the top of each function
+
+- Control variables for loops should usually be declared within the loop statement
+
+- In rare cases, a variable might be declared at the top of a block or just before a loop in a long-ish function
+
+- Instance variables should be declared at the top of the class.
+
+- Dependent functions should be vertically close; the caller should be above the callee
+
+- Consider conceptual affinity when placing code vertically together
+
+- Horizontal limit should not exceed 120
+
+- Use white space to associate and dissociate strongly and weakly related concepts, respectively
+
+- Prefer unaligned declarations and assignments when it comes to horizontal alignment to point out the problem of long
+  list of declarations
+
+- Breaking indentation for short if statements, while loops, or functions is not good practice
+
+- Avoid dummy scopes (empty while or for statements) but if you cannot, indent semicolons to make clear
+
+- Make sure each team agrees on formatting rules together and follow it going forward
+
+### Reflection
+
+- Often I follow code formatting conventions without thinking about why
+
+- I do not often enjoy learning a brand new codebase but maybe I just haven't worked on a well formatted codebase
+
+- The analogy of comparing code to a newspaper is really insightful
+
+### Things to further investigate
+
+- The author suggests protected variables should be avoided to keep related
+  concepts vertically close. What does this mean?
+
+- Placing the caller above the callee might not be possible in all programming
+  languages...
