@@ -403,3 +403,66 @@
 
 - Placing the caller above the callee might not be possible in all programming
   languages...
+
+## Day 12
+
+> Chapter 6. Objects and Data Structures
+
+> May 2, 2022
+
+### Key points
+
+- Objects expose behavior and hide data (flexibility to add new data types).
+
+- Data structures expose data and have no significant behavior (flexibility to add new behaviors).
+
+- Avoid creating hybrids with objects and data structures
+
+### Things to remember
+
+- The reason developers keep variables private is to keep freedom to change their type or implementation on a whim or an
+  impulse
+
+- We do not want to expose the details of our data. We want to express our data in abstract terms.
+
+- Objects and data structures are different.
+
+- Objects hide their data behind abstractions and expose functions that operate on that data.
+
+- Data structure expose their data and have no meaningful functions.
+
+- Procedural code (code using data structures) makes it easy to add new functions without changing the existing data
+  structures. This makes it hard to add new data structures because all the functions must change.
+
+- Object Oriented code (code using objects, duh!) makes it easy to add new classes without changing existing functions.
+  This makes it hard to add new functions because all the classes must change.
+
+- The idea that everything is an object is a myth. Sometimes you really do want simple data structures with procedures
+  operating on them.
+
+- Law of Demeter
+
+  - A module should not know about the innards of the objects it manipulates
+
+  - A method should not invoke methods on objects that are returned by any of the allowed functions
+
+- Avoid creating hybrids that are half object and half data structure.
+
+- Data Transfer Object (DTO) -> a class with public variables and no functions; sometimes getters and setters exist to
+  satisfy OO purists
+
+- Active Records are special forms of DTOs. They are data structure with public variables but also have navigational
+  methods like `save`and `find`. Active Records are typically are direct transaltions from database tables or other data
+  sources.
+
+- Avoid placing business rule methods in Active Records as this creates a hybrid between a data structure and an object.
+
+### Reflection
+
+- I have not thought too much about the difference between objects and data structures. In fact, I treated objects as
+  another data structure.
+
+### Things to further investigate
+
+- In JavaScript, we hear that everything is an object. I wonder if this is why some developers dislike the language as
+  there are hybrids between objects and data structures everywhere!
