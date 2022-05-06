@@ -466,3 +466,55 @@
 
 - In JavaScript, we hear that everything is an object. I wonder if this is why some developers dislike the language as
   there are hybrids between objects and data structures everywhere!
+
+## Day 13
+
+> Review Quiz
+
+> May 3, 2022
+
+## Day 14 - 15
+
+> Chapter 7. Error Handling
+
+> May 4, 2022
+
+### Key points
+
+- Following some key rules during error handling will improve the robustness of your code
+
+- Extracting the error handling logic from the main algorithm can be a fine balancing act
+
+- Clean code is readable, but it must also be robust
+
+### Thinggs to remember
+
+- Error handling that obscures logic is wrong
+
+- Use exceptions rather than error codes
+
+  - Aesthetically pleasing
+
+  - Separates concerns -> main algorithm + error handling
+
+- Write your `try-catch-finally`statement first
+
+- Use unchecked exceptions
+
+- Provide comtext with exceptions
+
+- Define exception classes in terms of a caller's needs
+
+- Define the normal flow
+
+- Don't return null
+
+- Don't pass null
+
+### Reflection
+
+- I will need more practice with applying these rules before I fully understand them.
+
+### Things to further investigate
+
+- Try to apply these rules at work and ask questions
