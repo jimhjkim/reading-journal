@@ -477,7 +477,7 @@
 
 > Chapter 7. Error Handling
 
-> May 4, 2022
+> May 4 - 5, 2022
 
 ### Key points
 
@@ -487,7 +487,7 @@
 
 - Clean code is readable, but it must also be robust
 
-### Thinggs to remember
+### Things to remember
 
 - Error handling that obscures logic is wrong
 
@@ -518,3 +518,75 @@
 ### Things to further investigate
 
 - Try to apply these rules at work and ask questions
+
+## Day 16 - 17
+
+> Chapter 9. Unit testing
+
+> May 6 - 7, 2022
+
+## Day 18
+
+> Review Quiz
+
+> May 8, 2022
+
+## Day 19 - 20
+
+> Chapter 10. Classes
+
+> May 9 - 10, 2022
+
+### Key points
+
+- Single Responsbility Principle (SRP)
+
+- Open-Closed Principle (OCP)
+
+- Dependency Inversion Principle (DIP)
+
+### Things to remember
+
+- Class organization
+
+  - Begin with a list of variables
+
+  - Public static constants should come first, followed by private static variables
+
+  - Public functions should follow the list of variables
+
+  - Place the private utilities called by the public functions right after the public function itself (i.e., stepdown)
+
+  - Create a protected or package scope if private variables utility functions need to be accessed by a test
+
+  - Loosening encapsulation is always a last resort
+
+- Classes should be small, following the Single Responsibility Principle (SRP)
+
+- Too many of us think we are done once the program works... we rarely think about the other concern of organnization
+  and cleanliness
+
+- Best to keep cohesion high; more variables a method manipulates the more cohesive that method is to its class
+
+- Maintaining cohesion results in many small classes
+
+- Organizing for change means following the Open-Closed Principle (OCP)
+
+  - Classes should be open for extension but closed for modification
+
+- Isolating from change means following the Dependency Inversion Principle (DIP)
+
+  - Classes should depend on abstractions not concrete details
+
+### Reflection
+
+- I agree that programmers are inclined to just write code that works without thinking too much about organization and
+  cleanliness
+
+- Business needs will dictate deadlines so incorporating these clean classes principles will need to be done very
+  efficiently
+
+### Things to further investigate
+
+- I wonder if there are linters that can detect messy classes and suggest changes. Would code writing software (AI) be
+  better at organizing code than humans?
